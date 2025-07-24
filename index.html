@@ -1,78 +1,127 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="bg-white text-gray-800">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Davina Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-  <!-- NAVIGATION -->
-  <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
-    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Davina</h1>
-      <ul class="flex space-x-6">
-        <li><a href="#about" class="hover:text-blue-600">About</a></li>
-        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
-        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  </head>
+  <body class="bg-gray-950 text-white font-sans scroll-smooth">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <main class="pt-24">
-    <!-- HERO SECTION -->
-    <section class="text-center py-20 bg-gradient-to-r from-blue-100 to-purple-100">
-      <h2 class="text-4xl font-extrabold mb-4">Hello, I'm Davina 👋</h2>
-      <p class="text-lg text-gray-700 mb-6">Frontend Developer | UI Enthusiast</p>
-      <a href="#projects" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">See My Work</a>
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-md shadow">
+      <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-purple-400">Dapinskuyy</h1>
+        <ul class="flex space-x-6 text-sm">
+          <li><a href="#about" class="hover:text-purple-300 transition">About</a></li>
+          <li><a href="#projects" class="hover:text-purple-300 transition">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-28 pb-20 text-center bg-gradient-to-br from-purple-900 via-black to-gray-900" data-aos="fade-in">
+      <h2 class="text-5xl font-extrabold mb-4">Hi, I'm Davina A.K.A Dapinskuyy</h2>
+      <p class="text-lg text-purple-200 mb-6">Fullstack Developer & UI/UX Enthusiast</p>
+      <a href="#projects" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg text-white transition">View My Work</a>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="max-w-4xl mx-auto py-16 px-6">
-      <h3 class="text-3xl font-bold mb-6">About Me</h3>
-      <p class="text-gray-700 leading-relaxed">
-        I'm a frontend developer passionate about creating user-friendly interfaces and clean designs. I love using TailwindCSS to make responsive, beautiful websites.
+    <section id="about" class="py-16 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+      <h3 class="text-3xl font-bold text-purple-300 mb-4">About Me</h3>
+      <p class="text-gray-300 leading-relaxed">
+        Student at Prestasi Prima Vocational High School. Passionate of Fullstack Developer, especially in Frontend. I love to learn and explore new things. I'm a beginner in UI/UX Design.
       </p>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="bg-gray-100 py-16 px-6">
-      <div class="max-w-6xl mx-auto">
-        <h3 class="text-3xl font-bold mb-10 text-center">Projects</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Project Card -->
-          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-            <img src="assets/img/project1.png" alt="Project 1" class="rounded mb-4">
-            <h4 class="text-xl font-semibold">Weather App</h4>
-            <p class="text-gray-600 mt-2">Simple weather app with real-time API using JavaScript.</p>
-          </div>
-
-          <!-- Tambahkan project lainnya -->
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-<section id="gallery" class="py-16 px-6 bg-white">
+<section id="projects" class="py-16 px-6 bg-gray-900" data-aos="fade-up">
   <div class="max-w-6xl mx-auto">
-    <h3 class="text-3xl font-bold mb-10 text-center">Gallery</h3>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      <img src="assets/img/gallery1.jpg" alt="Gallery Image 1" class="rounded-lg hover:scale-105 transition duration-300">
-      <img src="assets/img/gallery2.jpg" alt="Gallery Image 2" class="rounded-lg hover:scale-105 transition duration-300">
-      <img src="assets/img/gallery3.jpg" alt="Gallery Image 3" class="rounded-lg hover:scale-105 transition duration-300">
-      <img src="assets/img/gallery4.jpg" alt="Gallery Image 4" class="rounded-lg hover:scale-105 transition duration-300">
-      <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+    <h3 class="text-3xl font-bold text-purple-300 mb-8 text-center">Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Project 1 -->
+      <div onclick="openModal('Project 1')" class="cursor-pointer bg-gray-800 hover:scale-105 transition p-4 rounded-lg shadow-lg">
+        <img src="assets/img/proj2.jpg" class="rounded-lg mb-4" alt="Project 1"/>
+        <h4 class="text-xl font-semibold text-purple-200">Project 1</h4>
+        <p class="text-gray-400">Responsive web app built with MERN Stack.</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div onclick="openModal('Project 2')" class="cursor-pointer bg-gray-800 hover:scale-105 transition p-4 rounded-lg shadow-lg">
+        <img src="assets/img/Dashboard.png" class="rounded-lg mb-4" alt="Project 2"/>
+        <h4 class="text-xl font-semibold text-purple-200">Project 2</h4>
+        <p class="text-gray-400">Interactive UI dashboard design with Figma.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
 
-  <footer class="text-center py-6 text-sm text-gray-500 bg-white border-t">
-    &copy; 2025 Davina Anandia. All rights reserved.
-  </footer>
+<!-- SOCIAL MEDIA CAROUSEL -->
+<section id="socmed" class="py-20 px-6 bg-gray-900" data-aos="fade-up">
+  <h3 class="text-3xl font-bold text-purple-300 mb-10 text-center">Find Me On</h3>
 
-  <script src="script.js"></script>
-</body>
+  <div class="swiper mySwiper max-w-xl mx-auto">
+    <div class="swiper-wrapper">
+
+      <!-- YouTube -->
+      <div class="swiper-slide flex flex-col items-center cursor-pointer" onclick="window.open('https://www.youtube.com/live/j0yKxVgVZQg?si=8-LyLmAsI9h-8sIq')">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="w-20 mb-3 hover:scale-110 transition" />
+        <p class="text-purple-200">YouTube</p>
+      </div>
+
+      <!-- Discord -->
+      <div class="swiper-slide flex flex-col items-center cursor-pointer" onclick="window.open('https://discordapp.com/users/_davinaaa')">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" class="w-20 mb-3 hover:scale-110 transition" />
+        <p class="text-purple-200">Discord</p>
+      </div>
+
+      <!-- Instagram -->
+      <div class="swiper-slide flex flex-col items-center cursor-pointer" onclick="window.open('https://www.instagram.com/davinannd?igsh=MXhqc3J0M2JnY3dtMg==')">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="w-20 mb-3 hover:scale-110 transition" />
+        <p class="text-purple-200">Instagram</p>
+      </div>
+
+      <!-- Spotify -->
+      <div class="swiper-slide flex flex-col items-center cursor-pointer" onclick="window.open('https://open.spotify.com/user/315q4klv34o4soyugzkkcpenwcay?si=599fec1c3d984398')">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png" class="w-20 mb-3 hover:scale-110 transition" />
+        <p class="text-purple-200">Spotify</p>
+      </div>
+
+      <!-- GitHub -->
+      <div class="swiper-slide flex flex-col items-center cursor-pointer" onclick="window.open('https://github.com/davvanandia', '_blank')">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="w-20 mb-3 hover:scale-110 transition" />
+        <p class="text-purple-200">GitHub</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- MODAL -->
+    <div id="modal" class="fixed inset-0 bg-black/80 hidden justify-center items-center z-50" onclick="closeModal()">
+      <div class="bg-gray-900 p-8 rounded-lg max-w-lg text-center">
+        <h4 id="modal-title" class="text-2xl font-bold text-purple-300 mb-4">Project Title</h4>
+        <p class="text-gray-300">Design UI /UX for monitoring website</p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-700 bg-gray-950">
+      &copy; 2025 Davina Anandia — All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
 </html>
